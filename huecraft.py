@@ -13,6 +13,7 @@ class LightController():
 		self.coords = (self.parent.coords[0][0],self.parent.coords[0][1])######TEMP
 
 		self.thread = Timer(self.interval,self.repeat)
+		self.b = Bridge('192.168.1.<Your bridge IP here>','Yourusernamehere') #Placeholder for public username until I implement that feature
 		self.lights = self.b.lights
 
 	def repeat(self):
